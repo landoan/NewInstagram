@@ -1,4 +1,19 @@
+<div class="wrap-picsBox">
+    <section>
+        <article class="picsBox">
 <% @photos.each do |photo| %>
- 	<%= photo.username %>
- 	<%= image_tag(photo.url) %>
-<% end %>
+
+          <div class="picBox">
+            <p class="pic"><%= image_tag(photo.url) %></p>
+            <p class="content"><%= photo.caption %></p>
+            <p class="author"><%= photo.username %></p>
+            <div class="sortInfo">
+              <p class="postDate">Posted <%= photo.created_at %></p>
+              <p class="like"><i class="fa fa-heart"></i> <%= photo.likes_count %> Likes</p>
+            </div>
+          </div>
+
+  <% end %>
+            </article>
+      </section>
+  </div>

@@ -8,7 +8,43 @@
 </head>
 <body>
 
+  <div class="wrapper">
+    <header>
+      <h1 class="logo"><a href="#">&nbsp;</a></h1>
+      <div class="authorization">
+        <ul>
+          <li><a href="#">Add New</a>
+<!--           <li><a href="#" class="res_nav">Sign up</a></li>
+          <li><a href="#" class="log_nav">Sign in</a></li> -->
+        </ul>
+      </div>
+    </header>
+    <nav>
+<!--      <div class="sort">
+        <ul>
+          <li><a href="">Lastest</a></li>
+          <li><a href="">Popular</a></li>
+          <li><a href="">Hot</a></li>
+          <li><a href="">Random</a></li>
+        </ul>
+      </div>-->
+      <div class="search">
+        <label><i class="fa fa-search"></i></label><input type="text" placeholder="Search...">
+      </div>
+    </nav>
+    
 <%= yield %>
+    <footer>
+      <p>&copy; Coder photos</p>
+      <ul>
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+        <li><a href=""><i class="fa fa-envelope"></i></a></li>
+      </ul>
+    </footer>
+    </div>
+
 
 </body>
 </html>
