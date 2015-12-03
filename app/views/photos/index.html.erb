@@ -1,1 +1,4 @@
-hello
+<% @photos.each do |photo| %>
+ 	<%= photo.username %>
+ 	<%= image_tag(photo.url) %>
+<% end %>
